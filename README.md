@@ -96,7 +96,7 @@ smart-study-assistant/
 
 ## ✨ Author
 
-**Naima Sahitya**
+**Naima Sahitya Andini**
 Artificial Intelligence Student — IPB University
 
 ---
