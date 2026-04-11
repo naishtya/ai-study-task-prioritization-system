@@ -81,8 +81,6 @@ smart-study-assistant/
 ├── main.py
 ├── README.md
 ├── .gitignore
-└── docs/
-    └── Project.pdf (optional)
 ```
 
 ---
