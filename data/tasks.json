@@ -1,17 +1,12 @@
 [
     {
-        "subject": "english",
-        "deadline": 4,
-        "difficulty": 10
+        "subject": "Machine Learning Assignment",
+        "deadline": 2,
+        "difficulty": 9
     },
     {
-        "subject": "math",
-        "deadline": 1,
-        "difficulty": 10
-    },
-    {
-        "subject": "english",
-        "deadline": 10,
-        "difficulty": 3
+        "subject": "Database Project",
+        "deadline": 5,
+        "difficulty": 7
     }
 ]
