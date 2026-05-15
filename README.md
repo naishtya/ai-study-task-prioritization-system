@@ -1,106 +1,161 @@
-# 🎓 AI-Based Study Task Prioritization System
+# 🎓 AI Study Task Prioritization System
 
-An intelligent command-line application that helps students manage and prioritize study tasks using a rule-based decision-making approach.
-
----
-
-## 🚀 Overview
-
-This project is designed to improve student productivity by identifying which tasks should be prioritized based on urgency and difficulty.
-
-By applying a simple yet effective priority scoring system, the application simulates basic AI behavior to assist decision-making in study planning.
+An intelligent productivity application designed to help students manage, organize, and prioritize study tasks efficiently using AI-inspired decision-making logic.
 
 ---
 
-## ✨ Key Features
+# 🚀 Project Overview
 
-* 📌 Add, update, and delete study tasks
+AI Study Task Prioritization System is a modular Python-based application that assists students in determining which academic tasks should be completed first based on urgency and difficulty.
+
+The project was initially developed as a simple CLI prototype and is currently being upgraded into a more professional, scalable, maintainable, and future-oriented productivity platform.
+
+---
+
+# ✨ Current Features
+
+* 📌 Add study tasks
+* 📝 Update existing tasks
+* 🗑 Delete tasks
 * 📊 Automatic priority calculation
-* 🎯 Smart task recommendation (highest priority)
-* 📈 Sort tasks based on urgency
-* 💾 Persistent storage using JSON
-* 🧠 Object-Oriented Programming (OOP) design
+* 🎯 Smart task recommendation
+* 📈 Sort tasks by priority
+* 💾 Persistent local storage using JSON
+* 🧠 Object-Oriented Programming (OOP)
+* 🧱 Modular project architecture
+* 🔧 Service-based code structure
+* 🗂 Clean separation of concerns
+* ⚡ Type hints for maintainability
 
 ---
 
-## 🧠 How It Works
+# 🧠 Priority Calculation
 
-Each task consists of:
+The application calculates task priority using:
 
-* **Subject**
-* **Deadline (in days)**
-* **Difficulty (scale 1–10)**
+priority = \frac{difficulty}{deadline}
 
-The system calculates priority using:
+Tasks with higher scores are considered more urgent and important.
 
+---
+
+# 🏗 Current Project Architecture
+
+```text
+ai-study-task-prioritization-system/
+│
+├── app/
+│   ├── models/
+│   ├── services/
+│   ├── storage/
+│   ├── utils/
+│   └── main.py
+│
+├── data/
+│   └── tasks.json
+│
+├── run.py
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
 ```
-priority = difficulty / deadline
-```
-
-Tasks with higher scores are considered more urgent.
 
 ---
 
-## 🔄 System Flow
+# 🛠 Tech Stack
 
-User Input → Task Stored → Priority Calculated → Recommendation Generated → Task Updated/Deleted
-
----
-
-## 🛠 Tech Stack
-
-* **Python**
-* **Object-Oriented Programming (OOP)**
-* **JSON (for data persistence)**
+| Technology   | Purpose                   |
+| ------------ | ------------------------- |
+| Python       | Core programming language |
+| OOP          | Application architecture  |
+| JSON         | Local data persistence    |
+| Type Hints   | Better maintainability    |
+| Git & GitHub | Version control           |
 
 ---
 
-## ▶️ How to Run
+# ▶️ How to Run
+
+## 1. Clone Repository
 
 ```bash
-python main.py
+git clone <your-repository-url>
+```
+
+## 2. Move into Project Directory
+
+```bash
+cd ai-study-task-prioritization-system
+```
+
+## 3. Run Application
+
+```bash
+python run.py
 ```
 
 ---
 
-## 📸 Example Output
+# 📸 Example Output
 
-```
+```text
 🎯 Top Priority Task:
-📘 Math
-🔥 Priority Score: 2.50
+📘 Physics
+🔥 Priority Score: 4.50
 ```
 
 ---
 
-## 📁 Project Structure
+# 🎯 Development Goals
 
-```
-smart-study-assistant/
-│
-├── main.py
-├── README.md
-└── .gitignore
-```
+This project is currently being upgraded progressively into a modern AI-powered productivity platform with features such as:
 
----
-
-## 📌 Future Improvements
-
-* 🖥 GUI version (Tkinter)
-* 🌐 Web-based version (Streamlit / Flask)
-* 🤖 Advanced AI-based recommendations
-* ⏰ Task reminders and notifications
+* 🌐 Web-based dashboard
+* 🖥 Streamlit interface
+* 🗄 Database integration
+* ⚡ REST API
+* 🤖 AI-based recommendations
+* 📈 Productivity analytics
+* 🔐 Authentication system
+* ☁ Cloud deployment
+* 🐳 Docker support
+* 🔄 CI/CD pipeline
 
 ---
 
-## ✨ Author
+# 🧩 Planned Future Features
+
+* Smart scheduling system
+* Study analytics dashboard
+* Adaptive prioritization
+* AI productivity assistant
+* Reminder & notification system
+* Machine learning recommendation engine
+
+---
+
+# 📚 Learning Objectives
+
+This project demonstrates:
+
+* Clean code practices
+* Modular Python architecture
+* Object-oriented programming
+* Basic AI-inspired decision systems
+* Software engineering fundamentals
+* Project refactoring techniques
+* Maintainable code structure
+
+---
+
+# 👩‍💻 Author
 
 **Naima Sahitya Andini**
 Artificial Intelligence Student — IPB University
 
 ---
 
-## ⭐ Final Note
+# ⭐ Project Status
 
-This project demonstrates fundamental concepts in software development, including structured programming, algorithmic thinking, and object-oriented design, while applying a simple AI-inspired approach to real-world productivity problems.
+🚧 Currently under active development and modernization.
