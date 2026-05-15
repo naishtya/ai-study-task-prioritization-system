@@ -35,7 +35,7 @@ The application automatically calculates task priority based on:
 
 Priority formula:
 
-priority = \frac{difficulty}{deadline}
+Priority Score = Difficulty / Deadline
 
 Tasks with higher scores are considered more urgent and important.
 
