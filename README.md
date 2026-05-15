@@ -8,30 +8,32 @@ An intelligent productivity application designed to help students manage, organi
 
 AI Study Task Prioritization System is a modular Python-based application that assists students in determining which academic tasks should be completed first based on urgency and difficulty.
 
-The project was initially developed as a simple CLI prototype and is currently being upgraded into a more professional, scalable, maintainable, and future-oriented productivity platform.
+This project was initially developed as a simple command-line prototype and has been progressively upgraded into a more professional, scalable, maintainable, and modern productivity application.
+
+The system applies AI-inspired prioritization logic to recommend which tasks should be prioritized first.
 
 ---
 
-# ✨ Current Features
+# ✨ Features
 
-* 📌 Add study tasks
-* 📝 Update existing tasks
-* 🗑 Delete tasks
-* 📊 Automatic priority calculation
-* 🎯 Smart task recommendation
-* 📈 Sort tasks by priority
-* 💾 Persistent local storage using JSON
-* 🧠 Object-Oriented Programming (OOP)
-* 🧱 Modular project architecture
-* 🔧 Service-based code structure
-* 🗂 Clean separation of concerns
-* ⚡ Type hints for maintainability
+## 📌 Task Management
+
+* Add study tasks
+* Update existing tasks
+* Delete tasks
+* Display all tasks
+* Sort tasks by priority
 
 ---
 
-# 🧠 Priority Calculation
+## 🧠 Smart Recommendation System
 
-The application calculates task priority using:
+The application automatically calculates task priority based on:
+
+* task difficulty
+* deadline urgency
+
+Priority formula:
 
 priority = \frac{difficulty}{deadline}
 
@@ -39,21 +41,46 @@ Tasks with higher scores are considered more urgent and important.
 
 ---
 
-# 🏗 Current Project Architecture
+## 💾 Persistent Storage
 
-```text
+* Local JSON-based data persistence
+* Automatically saves tasks
+* Automatically loads previous tasks
+
+---
+
+## 🖥 Modern Web Interface
+
+* Interactive Streamlit dashboard
+* Clean and user-friendly UI
+* Sidebar navigation
+* Real-time task management
+
+---
+
+# 🏗 Project Architecture
+
+```text id="lgjlwm"
 ai-study-task-prioritization-system/
 │
 ├── app/
 │   ├── models/
+│   │   └── task.py
+│   │
 │   ├── services/
+│   │   └── task_service.py
+│   │
 │   ├── storage/
+│   │   └── json_storage.py
+│   │
 │   ├── utils/
+│   │
 │   └── main.py
 │
 ├── data/
 │   └── tasks.json
 │
+├── streamlit_app.py
 ├── run.py
 ├── requirements.txt
 ├── .env
@@ -63,11 +90,28 @@ ai-study-task-prioritization-system/
 
 ---
 
+# 🧱 Architecture Design
+
+The project follows a modular architecture with separation of concerns:
+
+```text id="jlwm8x"
+Frontend (Streamlit UI)
+        ↓
+Service Layer
+        ↓
+Storage Layer
+        ↓
+JSON Database
+```
+
+---
+
 # 🛠 Tech Stack
 
 | Technology   | Purpose                   |
 | ------------ | ------------------------- |
 | Python       | Core programming language |
+| Streamlit    | Web application interface |
 | OOP          | Application architecture  |
 | JSON         | Local data persistence    |
 | Type Hints   | Better maintainability    |
@@ -75,63 +119,97 @@ ai-study-task-prioritization-system/
 
 ---
 
-# ▶️ How to Run
+# ▶️ Installation & Setup
 
 ## 1. Clone Repository
 
-```bash
-git clone <your-repository-url>
+```bash id="jlwmq8"
+git clone <https://github.com/naishtya/ai-study-task-prioritization-system>
 ```
+
+---
 
 ## 2. Move into Project Directory
 
-```bash
+```bash id="2jlwmq"
 cd ai-study-task-prioritization-system
 ```
 
-## 3. Run Application
+---
 
-```bash
-python run.py
+## 3. Create Virtual Environment
+
+### Windows
+
+```bash id="jlwm94"
+python -m venv .venv
 ```
 
 ---
 
-# 📸 Example Output
+## 4. Activate Virtual Environment
 
-```text
-🎯 Top Priority Task:
-📘 Physics
-🔥 Priority Score: 4.50
+### Windows (PowerShell)
+
+```bash id="jlwm4p"
+.venv\Scripts\Activate.ps1
 ```
 
 ---
 
-# 🎯 Development Goals
+## 5. Install Dependencies
 
-This project is currently being upgraded progressively into a modern AI-powered productivity platform with features such as:
-
-* 🌐 Web-based dashboard
-* 🖥 Streamlit interface
-* 🗄 Database integration
-* ⚡ REST API
-* 🤖 AI-based recommendations
-* 📈 Productivity analytics
-* 🔐 Authentication system
-* ☁ Cloud deployment
-* 🐳 Docker support
-* 🔄 CI/CD pipeline
+```bash id="jlwm07"
+pip install -r requirements.txt
+```
 
 ---
 
-# 🧩 Planned Future Features
+# 🚀 Run Application
 
-* Smart scheduling system
-* Study analytics dashboard
-* Adaptive prioritization
-* AI productivity assistant
-* Reminder & notification system
-* Machine learning recommendation engine
+## Run Streamlit Dashboard
+
+```bash id="jlwmr7"
+streamlit run streamlit_app.py
+```
+
+---
+
+# 📸 Example Features
+
+* 📋 Smart task dashboard
+* 🎯 AI-inspired task recommendation
+* 📊 Priority-based task organization
+* 💾 Automatic task persistence
+
+---
+
+# 🎯 Current Development Status
+
+✅ Modular architecture
+✅ Streamlit web dashboard
+✅ Service-based structure
+✅ JSON persistence
+✅ Type hints
+✅ Environment configuration
+✅ GitHub-ready project structure
+
+---
+
+# 🚀 Future Improvements
+
+Planned upgrades for future development:
+
+* SQLite / PostgreSQL database
+* REST API using FastAPI
+* Authentication system
+* Advanced analytics dashboard
+* AI-based recommendation engine
+* Machine learning prioritization
+* Notification & reminder system
+* Docker support
+* CI/CD automation
+* Cloud deployment
 
 ---
 
@@ -142,10 +220,11 @@ This project demonstrates:
 * Clean code practices
 * Modular Python architecture
 * Object-oriented programming
-* Basic AI-inspired decision systems
 * Software engineering fundamentals
-* Project refactoring techniques
+* AI-inspired decision systems
+* Refactoring techniques
 * Maintainable code structure
+* Basic productivity system design
 
 ---
 
