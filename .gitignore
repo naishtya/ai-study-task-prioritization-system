@@ -1,3 +1,22 @@
+# Python
 __pycache__/
 *.pyc
-tasks.json
+
+# Virtual Environment
+venv/
+env/
+
+# Environment Variables
+.env
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Database
+*.db
+
+# Logs
+*.log
